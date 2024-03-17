@@ -2,7 +2,9 @@
 .background_image {
   display: flex;
   justify-content: center;
-  background-image: url("../assets/Background1.png");
+  background-image: image-set(
+    url("../assets/Background1.png") 1x,
+    url("../assets/Background4.png") 2x,);
   background-repeat: no-repeat;
   background-size: cover;
   width: fit-content;
@@ -11,10 +13,9 @@
 }
 
 .perfil {
-  width: 500px;
-  height: 500px;
   position: absolute;
-  top: 30%;
-  left: 55%;
+  top: 50%;
+  left: 60%;
   transform: translate(-55%, -50%);
+  width: 50%
 }
